@@ -1,0 +1,16 @@
+html, body {
+	background-color: #6f5499;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	display: table;
+}
+
+h1 {
+	color: #fff;
+	margin: 0;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 6em /* 3 times the normal size */
+}
