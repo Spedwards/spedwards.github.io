@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Colour Converter</title>
+		
+		<link rel="stylesheet" href="style.css" />
+		<script src="jquery-1.11.0.min.js"></script>
+	</head>
+	
+	<body>
+		<div id="colours">
+		  <fieldset>
+			<label id="col">
+			  Color: 
+			  <input type="text" placeholder="#FFFFFF or rgb(0,0,0)" />				<!-- Input Text -->
+			</label>
+		  </fieldset>                                                                                                                         
+		  <fieldset id="type">
+			<h3>Input Type</h3>
+			<label>
+			  CYMK: 
+			  <input type="radio" id="cymk" name="coltype" value="cmyk" />			<!-- Input Colours: CMYK -->
+			</label>
+			<label>
+			  RGB: 
+			  <input type="radio" id="rgb" name="coltype" value="rgb" />			<!-- Input Colours: RGB -->
+			</label>
+			<label>
+			  RGBA: 
+			  <input type="radio" id="rgba" name="coltype" value="rgba" />			<!-- Input Colours: RGBA -->
+			</label>
+			<label>
+			  HEX: 
+			  <input type="radio" id="hex" name="coltype" value="hex" />			<!-- Input Colours: HEX -->
+			</label>
+			<label>
+			  HSL: 
+			  <input type="radio" id="hsl" name="coltype" value="hsl" />			<!-- Input Colours: HSL -->
+			</label>
+			<label>
+			  Named:
+			  <input type="radio" id="websafe" name="coltype" value="websafe" />	<!-- Input Colours: Named -->
+			</label>
+		  </fieldset>
+		  <fieldset>
+			<input type="submit" />
+		  </fieldset>
+		  <fieldset>
+			<h3>Output:</h3>
+			<div id="output">
+			  
+			</div>
+		  </fieldset>
+		</div>
+		
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

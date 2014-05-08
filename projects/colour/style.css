@@ -1,0 +1,69 @@
+html { height:calc(100% - 16px) }
+body {
+	height:100%;
+	background:url(bg.jpg);
+}
+
+#colours {
+	background:rgba(255,255,255,0.8);
+}
+
+fieldset {
+	border-left:2px solid rgba(255,255,255,0.7);
+	border-right:2px solid rgba(255,255,255,0.7);
+	border-top:1px solid rgba(255,255,255,0.7);
+	border-bottom:1px solid rgba(255,255,255,0.7);
+}
+
+fieldset:first-of-type {
+	border-top:2px solid rgba(255,255,255,0.7);
+}
+
+fieldset:last-of-type {
+	border-bottom:2px solid rgba(255,255,255,0.7);
+}
+
+label {
+  display:block;
+}
+
+#col { font-weight:bold }
+
+#type label {
+  width:90px;
+}
+
+input[type='radio'] {
+  float:right;
+}
+
+input[type=submit],input[type=reset] {
+  background: #e3e3e3;
+  border: 1px solid #bbb;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
+  -moz-box-shadow: inset 0 0 1px 1px #f6f6f6;
+  box-shadow: inset 0 0 1px 1px #f6f6f6;
+  color: #333;
+  font: bold 12px "helvetica neue", helvetica, arial, sans-serif;
+  line-height: 1;
+  padding: 8px 0 9px;
+  text-align: center;
+  text-shadow: 0 1px 0 #fff;
+  width: 150px;
+  margin-right:5px;}
+input[type=submit]:hover,input[type=reset]:hover {
+  background: #d9d9d9;
+  -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
+  -moz-box-shadow: inset 0 0 1px 1px #eaeaea;
+  box-shadow: inset 0 0 1px 1px #eaeaea;
+  color: #222;
+  cursor: pointer; }
+input[type=submit]:active,input[type=reset]:active {
+  background: #d0d0d0;
+  -webkit-box-shadow: inset 0 0 1px 1px #e3e3e3;
+  -moz-box-shadow: inset 0 0 1px 1px #e3e3e3;
+  box-shadow: inset 0 0 1px 1px #e3e3e3;
+  color: #000; }
