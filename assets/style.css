@@ -104,10 +104,32 @@ section h2 {
 	margin-left: 1em;
 }
 
-section a {
+section h2 a {
 	color: #1D2265;
 	text-decoration: none;
 	display: block;
 	width: 100%;
 	height: 100%;
+}
+
+section .demo {
+	float: right;
+	display: inline;
+	position: relative;
+	bottom: 2.75em;
+	right: 1em;
+	font-size: smaller;
+}
+
+section .demo a {
+	color: #000;
+	text-decoration: none;
+}
+
+@media screen and (max-width:865px) {
+	h1 { font-size:300%; }
+}
+
+@media screen and (max-width:540px) {
+	h1 { font-size:200%; }
 }
