@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Countdown Test</title>
+		<script src="jquery.min.js"></script>
+		<script src="countdown.js"></script>
+		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?autoload=false"></script>
+		<link rel="stylesheet" href="countdown.css">
+		<link rel="stylesheet" href="demo.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Countdown Demonstration</h1>
+			<div id="left">
+				<h2>Singular Options</h2>
+				<div id="hour">
+					<h3>Hours</h3>
+					<h4>One</h4>
+					<div id="one"></div>
+					<script>
+						$('#hour #one').countdown({
+							hours:1
+						});
+					</script>
+					<h4>Ten</h4>
+					<div id="ten"></div>
+					<script>
+						$('#hour #ten').countdown({
+							hours:10
+						});
+					</script>
+				</div>
+				<div id="minute">
+					<h3>Minutes</h3>
+					<h4>One</h4>
+					<div id="one"></div>
+					<script>
+						$('#minute #one').countdown({
+							minutes:1
+						});
+					</script>
+					<h4>Ten</h4>
+					<div id="ten"></div>
+					<script>
+						$('#minute #ten').countdown({
+							minutes:10
+						});
+					</script>
+				</div>
+				<div id="second">
+					<h3>Seconds</h3>
+					<h4>One</h4>
+					<div id="one"></div>
+					<script>
+						$('#second #one').countdown({
+							seconds:1
+						});
+					</script>
+					<h4>Ten</h4>
+					<div id="ten"></div>
+					<script>
+						$('#second #ten').countdown({
+							seconds:10
+						});
+					</script>
+				</div>
+				<div id="millisecond">
+					<h3>Milliseconds</h3>
+					<h4>Thousand</h4>
+					<div id="thousand"></div>
+					<script>
+						$('#millisecond #thousand').countdown({
+							milliseconds:1000
+						});
+					</script>
+					<h4>Hundred</h4>
+					<div id="hundred"></div>
+					<script>
+						$('#millisecond #hundred').countdown({
+							milliseconds:100
+						});
+					</script>
+				</div>
+			</div>
+			
+			
+			<div id="right">
+				<h2>Combined Options</h2>
+				<div id="hoursminutes">
+					<h3>Hours + Minutes</h3>
+					<div></div>
+					<script>
+						$('#hoursminutes div').countdown({
+							hours:1,
+							minutes:30
+						});
+					</script>
+				</div>
+				
+				<div id="hoursseconds">
+					<h3>Hours + Seconds</h3>
+					<div></div>
+					<script>
+						$('#hoursseconds div').countdown({
+							hours:1,
+							seconds:30
+						});
+					</script>
+				</div>
+				
+				<div id="minutesseconds">
+					<h3>Minutes + Seconds</h3>
+					<div></div>
+					<script>
+						$('#minutesseconds div').countdown({
+							minutes:30,
+							seconds:30
+						});
+					</script>
+				</div>
+				
+				<div id="minutessecondsmilliseconds">
+					<h3>Minutes + Seconds + Milliseconds</h3>
+					<div></div>
+					<script>
+						$('#minutessecondsmilliseconds div').countdown({
+							minutes:30,
+							seconds:30,
+							milliseconds:500
+						});
+					</script>
+				</div>
+			</div>
+			
+			<div id="docs">
+				<h2>Documentation</h2>
+				
+				<div id="howto">
+					<h3>Usage</h3>
+					
+					<p>The syntax is very simple. Juse use</p>
+					<pre class="prettyprint lang-js">$(selector).countdown(<span class="opt">options</span>);</pre>
+					<p>to generate a countdown timer. If the selected element already has a countdown, the previous one will be overwritten.</p>
+					
+					<h3 id="options">Options</h3>
+					
+					<p>The available options and their default values are:</p>
+					<pre class="prettyprint lang-js" id="optscode">
+						{
+							// the time to count down from
+							hours : 0,
+							minutes : 0,
+							seconds : 0,
+							milliseconds : 0,
+							
+							// whether to count down or up
+							reverse : false
+						}
+					</pre>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<script>
+			$('#docs').css('margin-top', $('#left').height() + $('h1').height());
+			
+			$('pre').each(function(index) {
+				$(this).text(
+					$(this).text().replace(/\t{6}/g,'')
+				);
+			});
+		</script>
+	</body>
+</html>

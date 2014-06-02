@@ -1,0 +1,15 @@
+#countdown {
+	outline: 1px solid black;
+	padding: 0.5em 1.5em;
+	display: inline-block;
+}
+
+#hours, #minutes, #seconds {
+	font-size: 24pt;
+	font-weight: bold;
+	color: #3c3c3c;
+}
+
+#milliseconds {
+	padding-left: 7%;
+}

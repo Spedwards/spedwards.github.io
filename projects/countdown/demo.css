@@ -1,0 +1,51 @@
+html,body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+#left,#right {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+h1,h2 {
+	text-align: center;
+}
+
+h3 {
+	text-decoration: underline;
+}
+
+#hour,#minute,#second,#millisecond {
+	width: 50%;
+	float: left;
+}
+
+#hoursminutes,#hoursseconds,#minutesseconds,#minutessecondsmilliseconds {
+	width: 50%;
+	float: left;
+}
+
+#docs {
+	margin: 8px;
+	padding: 0 10%;
+}
+
+#docs h3 {
+	text-decoration: none;
+}
+
+#docs pre:first-of-type {
+	text-indent: 1em;
+	width: 300px;
+}
+
+pre:first-of-type .pln:nth-of-type(7) {
+	background-color: yellow;
+	text-decoration: none;
+}
