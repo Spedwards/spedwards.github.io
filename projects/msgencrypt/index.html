@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Encryption</title>
+		<script src="encryption.js"></script>
+		<style>
+			html,body{margin:0;text-align:center;height:98%}
+			textarea,input{display:inline-block}
+			#decrypt-wrapper{margin-top:2em}
+		</style>
+	</head>
+	<body>
+		<div id="encrypt-wrapper">
+			<h2>Encrypt</h2>
+			<textarea id="encrypt" cols="70" rows="10"></textarea><br />
+			<input type="text" placeholder="key" />
+			<input type="button" value="Random" onclick="random('e')" /><br />
+			<input type="button" name="encrypt" id="encryptB" value="Encrypt" onclick="encryptText()">
+		</div>
+		<div id="decrypt-wrapper">
+			<h2>Decrypt</h2>
+			<textarea id="decrypt" cols="70" rows="10"></textarea><br />
+			<input type="text" placeholder="key" />
+			<input type="button" value="Random" onclick="random('d')" /><br />
+			<input type="button" name="decrypt" id="decryptB" value="Decrypt" onclick="decryptText()">
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
