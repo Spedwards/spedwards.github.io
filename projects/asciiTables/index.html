@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ascii Table Creation - Demo</title>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Ascii Table Creation - Demo</h1>
+			<div id="main">
+				<div id="howto">
+					<p>To use this demo, enter in how many columns and rows you want in your table into the designated inputs below. The top row is always the header.</p>
+				</div>
+				<div id="form">
+					<label>Columns: <input type="number" name="cols" id="cols" min="1" value="1"></label>
+					<label>Rows: <input type="number" name="rows" id="rows" min="2" value="2"></label>
+					<input type="submit" onclick="formTable();" name="formButton" id="formButton" value="Form Table">
+				</div>
+				<div id="table">
+					
+				</div>
+				<input type="submit" onclick="createTable();" name="createButton" id="createButton" value="Generate Ascii Table">
+				<pre id="output">
+				
+				</pre>
+			</div>
+		</div>
+	</body>
+</html>
