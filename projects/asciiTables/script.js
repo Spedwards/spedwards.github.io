@@ -27,7 +27,7 @@ function createTable() {
 	[].forEach.call(
 		document.querySelectorAll('td'),
 		function(v) {
-			/Firefox/.test(navigator.userAgent) ? elements.push(v.textContent) : elements.push(v.innerText);
+			elements.push(v.textContent);
 		}
 	);
 	
