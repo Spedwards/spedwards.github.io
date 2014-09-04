@@ -19,6 +19,8 @@ function getBrowser() {
 		return 'Arora';
 	} else if (/Safari/.test(navigator.userAgent) && !/Opera Software ASA/.test(navigator.vendor)) {
 		return 'Safari';
+	}else if (/Konqueror/.test(navigator.userAgent)) {
+		return 'Konqueror';
 	} else {
 		return 'an unknown browser';
 	}
