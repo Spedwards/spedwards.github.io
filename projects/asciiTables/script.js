@@ -27,7 +27,11 @@ function createTable() {
 	[].forEach.call(
 		document.querySelectorAll('td'),
 		function(v) {
-			elements.push(v.textContent);
+			if (/Firefox/.text(navigator.userAgent)) {
+				elements.push(v.textContent);
+			} else {
+				elements.push(v.innerText);
+			}
 		}
 	);
 	
