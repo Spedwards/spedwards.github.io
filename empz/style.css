@@ -3,6 +3,7 @@ html,body {
   width: calc(100% - 16px);
   background-color: #3c3c3c;
   color: #aaa;
+  margin-left: 16px;
 }
 
 h1 {
@@ -11,6 +12,10 @@ h1 {
 
 h1,h2,h3,span#bold {
   color: #ccc;
+}
+
+p {
+	width: 50%;
 }
 
 a {
