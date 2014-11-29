@@ -14,7 +14,7 @@ h1,h2,h3,span#bold {
   color: #ccc;
 }
 
-p {
+p,li {
 	width: 50%;
 }
 
