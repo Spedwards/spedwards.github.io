@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tile Load Calculator</title>
+		
+		<link rel="stylesheet" href="../core.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../alertify.core.css" />
+		<link rel="stylesheet" href="../alertify.default.css" />
+		
+		<script src="../jquery-1.11.0.min.js"></script>
+		<script src="../alertify.js"></script>
+		<script src="../numeral.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<fieldset>
+			<legend>Load Calculator</legend>
+			
+			<label>Type: <select id="lType">
+				<option value="i">Infantry</option>
+				<option value="v">Vehicle</option>
+				<option value="d">Demolitions</option>
+			</select></label>
+			
+			<label>Tier: <select id="lTier">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select></label>
+			
+			<label>Requirement: <input type="number" min="0" id="lReq" /></label>
+			
+			<label>Infected City: <input type="checkbox" id="lInf" /></label>
+			
+			<label>Boost: <input type="number" placeholder="%" id="lBoost"></label>
+			
+			<input type="submit" id="lSubmit" />
+		</fieldset>
+	</body>
+</html>

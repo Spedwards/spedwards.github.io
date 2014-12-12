@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Gather Speed Calculator</title>
+		
+		<link rel="stylesheet" href="../core.css" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="../alertify.core.css" />
+		<link rel="stylesheet" href="../alertify.default.css" />
+		
+		<script src="../jquery-1.11.0.min.js"></script>
+		<script src="../alertify.js"></script>
+		<script src="../numeral.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<fieldset>
+			<legend>Gather Speed Calculator</legend>
+			
+			<label>Resource Amount: <input type="number" min="0" id="rss" /></label>
+			
+			<label>Gather Rate: <input type="number" min="0" id="gr" placeholder="/s" /></label>
+			
+			<input type="submit" onclick="calc()" />
+		</fieldset>
+	</body>
+</html>
