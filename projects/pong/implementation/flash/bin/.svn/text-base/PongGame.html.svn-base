@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>Pong Game</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<script type="text/javascript" src="swfobject.js"></script>
+		<script type="text/javascript">
+			var flashvars  = {};
+			var params 	   = {};
+			var attributes = {
+					wmode			: "direct",
+					scale			: "noscale",
+					allowfullscreen : true,
+					menu			: false
+			};
+			swfobject.createCSS("html", "height:100%;");
+			swfobject.createCSS("body", "margin:0; padding:0; overflow:hidden; height:100%;");
+			swfobject.embedSWF("PongGame.swf", "flashContent", "100%", "100%", "11", false, flashvars, params, attributes);	
+		</script>
+	</head>
+	<body"> 
+		<div id="flashContent"></div>
+	</body> 
+</html>

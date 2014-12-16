@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/firefly_pong/!svn/ver/28/trunk/implementation/flash/src
+END
+BasicInfo.as
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/firefly_pong/!svn/ver/11/trunk/implementation/flash/src/BasicInfo.as
+END
+PongGame.as
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/firefly_pong/!svn/ver/15/trunk/implementation/flash/src/PongGame.as
+END
+PongGameStarling.as
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/firefly_pong/!svn/ver/25/trunk/implementation/flash/src/PongGameStarling.as
+END
+starling.swc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/firefly_pong/!svn/ver/15/trunk/implementation/flash/src/starling.swc
+END

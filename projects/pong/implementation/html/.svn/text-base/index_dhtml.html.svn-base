@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Pong</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="apple-touch-icon" href="assets/icon.png"/>
+		
+		<link type="text/css" rel="stylesheet" href="assets/game.css">
+		<script type="text/javascript" src="assets/jquery.js"></script>
+		<script type="text/javascript" src="assets/game.js"></script>
+		<script>
+			
+			$(document).ready(function(){
+				var game = new Pong().init('#wrapper');
+				setTimeout(function(){
+					window.scrollTo(0,0);
+				},100);
+	
+				// init stats
+				var time=0, prevTime=0, frames=0,fps=0, fpsMin=999, fpsMax=0;
+				var stats = $("<div id='stats'/>").width(200).height(20)
+								.attr('style','position:absolute; top:0; left:0; line-height:20px; font-size:10px; font-family:Verdana; color:#000; padding:0 20px')
+								.appendTo($("body"));
+				
+				time 		= Date.now();
+				prevTime  	= time;
+				
+				// clear the game's frame interval and substitute the one below:
+				clearInterval(game.frameInterval);
+				game.frameInterval = setInterval( function () {
+					
+					game.onFrame();
+					frames++;
+					
+					time = Date.now();
+					
+					if ( time > prevTime + 1000 ) {
+						fps 	= Math.round( ( frames * 1000 ) / ( time - prevTime ) );
+						fpsMin	= Math.min( fpsMin, fps );
+						fpsMax	= Math.max( fpsMax, fps );
+						stats.text(Math.round(fps) + " FPS");
+						prevTime = time;
+						frames=0;
+					}
+					
+				}, game.frameDelay );
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div id="wrapper"></div>
+	</body>
+</html>
