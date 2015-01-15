@@ -49,12 +49,15 @@ function format(n) {
 function start() {
 	var t = 't', j = 'i', d = 'd';
 	
-	total = document.getElementById('total').value;
-	amt.defense['t0'] = document.getElementById('t0d').value;
+	console.log(document.getElementById('total').value);
+	console.log(document.getElementById('total').value.replace(/,/g, ''));
+	console.log(+document.getElementById('total').value.replace(/,/g, ''));
+	total = +document.getElementById('total').value.replace(/,/g, '');
+	amt.defense['t0'] = +document.getElementById('t0d').value.replace(/,/g, '');
 	for (var i = 1; i < 5; i++) {
-		amt.troops[t+i] = document.getElementById(t+i+t).value;
-		amt.infected[t+i] = document.getElementById(t+i+j).value;
-		amt.defense[t+i] = document.getElementById(t+i+d).value;
+		amt.troops[t+i] = +document.getElementById(t+i+t).value.replace(/,/g, '');
+		amt.infected[t+i] = +document.getElementById(t+i+j).value.replace(/,/g, '');
+		amt.defense[t+i] = +document.getElementById(t+i+d).value.replace(/,/g, '');
 	}
 	run();
 }
