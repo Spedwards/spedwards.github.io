@@ -6,7 +6,7 @@ function recurse(width, pos, base) {
 		if (pos < width - 1) {
 			recurse(width, pos+1, base + charset[i]);
 		}
-		console.log(base + charset[i]);
+		run(base + charset[i]);
 	}
 }
 
