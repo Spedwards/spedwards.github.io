@@ -112,7 +112,8 @@ section h2 a {
 	height: 100%;
 }
 
-section .demo {
+section .demo,
+section .docs {
 	float: right;
 	display: inline;
 	position: relative;
@@ -121,7 +122,8 @@ section .demo {
 	font-size: smaller;
 }
 
-section .demo a {
+section .demo a,
+section .docs a {
 	color: #000;
 	text-decoration: none;
 }
