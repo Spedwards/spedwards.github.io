@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Marvel Future Fight</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="Table.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <h1>Marvel Future Fight</h1>
+            <h2>Friend Monitor</h2>
+
+            <div id="left">
+                <h3>Current Friends</h3>
+                <div id="friends">
+                    <div id="list">
+                        <select name="names" id="names" multiple size="1">
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <h3>Controls</h3>
+                <div id="panel">
+                    <div class="row">
+                        <label for="action-field">Add Friend to List: </label>
+                        <input type="text" id="action-field" name="action-field" />
+                        <input type="submit" value="Add" id="add" name="add" />
+                    </div>
+                    <div class="row">
+                        <span>The following buttons directly affect the selected names on the left.</span>
+                        <input type="button" value="Remove" id="remove" name="remove" />
+                        <input type="button" value="Sent Points" id="sent" name="sent" />
+                    </div>
+                    <div class="row">
+                        <input type="button" value="Print" id="print" name="print" />
+                        <input type="button" value="Reset" id="reset" name="reset" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre id="out"></pre>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
